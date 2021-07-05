@@ -1,6 +1,6 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.css";
-
+import { NavLink } from 'react-router-dom';
 const Navbar= () => {
     return (
         <>
@@ -13,19 +13,19 @@ const Navbar= () => {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav" style={{marginLeft:'auto'}}>
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home </a>
+        <a class="nav-link " href="/">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/About">About</a>
+        <NavLink class="nav-link" to="/About">About</NavLink>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Contact">Contact</a>
+        <NavLink class="nav-link" to="/Contact">Contact</NavLink>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Login">Login</a>
+        <NavLink class="nav-link" to="/Login">Login</NavLink>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Registration">Registration</a>
+        <NavLink class="nav-link" to="/Registration">Registration</NavLink>
       </li>
       
     </ul>

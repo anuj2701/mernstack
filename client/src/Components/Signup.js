@@ -4,7 +4,7 @@ function Signup() {
   return (
     <>
       <body>
-        <div className="contanier">
+        <div className="container">
           <div className="title">
             Registration
             <form action="#">
@@ -56,6 +56,30 @@ function Signup() {
                     required
                   ></input>
                 </div>
+              </div>
+              <div className='gender-details'>
+              <input type="radio" name='gender' id='dot-1'></input>
+              <input type="radio" name='gender' id='dot-2'></input>
+              <input type="radio" name='gender' id='dot-3'></input>
+              <span className='gender-title'>Gender</span>
+              <div className='category'>
+                <label for="dot-1">
+                  <span className="dot one "></span>
+                  <span className="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span className="dot two "></span>
+                  <span className="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                  <span className="dot three "></span>
+                  <span className="gender">other</span>
+                </label>
+                </div>
+               
+              </div>
+              <div className="button">
+                <input type ="submit" value="register"/>
               </div>
             </form>
           </div>

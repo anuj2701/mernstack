@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar= () => {
     return (
         <>
+  <body >     
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <a className="navbar-brand" href="#">
   <img src = {logo} ></img>
@@ -34,6 +35,7 @@ const Navbar= () => {
     </ul>
   </div>
 </nav>
+</body>
         </>
     )
 }
